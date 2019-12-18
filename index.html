@@ -5,10 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        h1{
+            color:red;
+            background-color: pink;
+        }    
+        p{
+            color: white;
+            background-color: steelblue;
+        }
+
+        .big{
+            font-size : 25px;
+        }
+        #dream{
+            font-size : 5px;
+        }
+    </style>
 </head>
 <body>
     <h1>저는 김재관입니다.</h1>
-    <p>저는 성남에 거주중이며, 연봉은 주시는대로 받겠습니다 멍멍컹컹</p>
+    <p class="big">저는 성남에 거주중이며, 연봉은 주시는대로 받겠습니다 멍멍컹컹</p>
+    <p id="dream">제 꿈은 일순입니다</p>
+    <div class="big"> More The world </div>
+    <button id="btn">알림창 표시!</button>
+    <script>
+        const btn = document.querySelector('#btn');
+        btn.addEventListener('click', function(){
+            alert('오라오라오라오라!!');
+        })    
+    </script>
 
 </body>
 </html>
